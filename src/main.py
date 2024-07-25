@@ -24,8 +24,3 @@ def read_cars():
     cursor.close()
     conn.close()
     return cars
-
-@app.get("/cars/{car_id}/doc")
-def read_root():
-    secret = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-    return { "message": "Hello World!"}
